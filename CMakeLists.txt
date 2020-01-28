@@ -10,5 +10,6 @@ set_target_properties(dcmtk-hello PROPERTIES
   CXX_STANDARD 11
   CXX_STANDARD_REQUIRED ON
   CXX_EXTENSIONS OFF)
+target_include_directories(dcmtk-hello PUBLIC ${DCMTK_INCLUDE_DIRS})
 target_link_libraries(dcmtk-hello LINK_PUBLIC
   dcmimage dcmimgle dcmdata oflog ofstd)
